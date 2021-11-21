@@ -1,4 +1,4 @@
-package HW;
+package HW7_1;
 import java.awt.*;
 import javax.swing.*;
 
