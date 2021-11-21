@@ -12,6 +12,7 @@ public class hw_7_1 {
                 frame.setTitle("buttonDemo");
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setVisible(true); 
+                //
             }
         });
     }

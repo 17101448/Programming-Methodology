@@ -45,20 +45,18 @@ public class hw_7_1_buttonframe extends JFrame
         buttonPanel.add(makeButton("고니", Color.LIGHT_GRAY));
         add(buttonPanel);
     }
-// 익명 클래스를 활용해 사용함 
-    private JButton makeButton(String name, final Color backGroundColor)
+
+    private JButton makeButton(String name, final Color backGroundColor)//버튼이름과, 지정 색을 인자로 받아옴 
     {
-        JButton button = new JButton(name); 
-        button.setBackground(Color.ORANGE);
-        /*
-        buttonPanel.addActionListener(event -> buttonPanel.setBackground(backGroundColor));
-        */
-        button.addActionListener(new ActionListener(){
+        JButton button = new JButton(name); //버튼이름으로 버튼 생성 
+        button.setBackground(Color.ORANGE); // 초기 버튼의 색을 주황색으로 설정 
+    
+        button.addActionListener(new ActionListener(){ // 버튼 클릭시 액션 
             public void actionPerformed(ActionEvent e){
-                button.setBackground(backGroundColor);
-                System.out.println(name);
+                button.setBackground(backGroundColor); // 버튼 색 바꾸기
+                System.out.println(name);              //버튼 이름 콘솔에 출력 
             }
         });
-        return button;
+        return button; // 버튼 반환 
     }
 }
